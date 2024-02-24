@@ -1,0 +1,66 @@
+@charset "UTF-8"
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#imagem{
+    margin: auto;
+    width: 99%vw;
+    height: 240px;
+    overflow: hidden;
+}
+.slid{
+    width: 400%;
+    height: 230px;
+    display: flex;
+}
+.slid input{
+    display: none;
+}
+.imagem {
+    width: 25%;
+    position: relative; 
+    transition: 2s;
+}
+.imagem img{
+    width: 500px;
+}
+.manual-naveg{
+    position: absolute;
+    width: 480px;
+    height: 0.5px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.manual{
+    border: 1px solid #faf1f1;
+    padding: 3px;
+    height: 0.5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual:not(:last-child){
+    margin-right: 10px;
+}
+.manual:hover{
+    background-color: white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+

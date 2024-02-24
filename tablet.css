@@ -1,0 +1,64 @@
+@charset "UTF-8"
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width:668px) and (max-width:992px) {
+
+
+    #imagem{
+        background-image: url("imagens/slid2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .slid, .imagem, .first, .manual-naveg, .auto #radio1, #radio2, #radio3, #radio4{
+        display: none;
+    }
+    #imenu{
+        display: none;
+    }
+    .navegador{
+        height: 60px;
+        background-color: rgb(25, 25, 78);
+        display: flex;
+        overflow-x: none;
+        margin: auto;
+    }
+ 
+    main{
+        
+        
+        text-align: justify;
+    }
+    main h1{
+        text-indent: 40px;
+    }
+    main .parag{
+        width: 600px;
+        margin: auto;
+        line-height: 23px;
+        
+    }
+    section{
+        columns: 2;
+    }
+
+    article, video{
+        height: 180px;
+        width: 320px;
+        border-radius: 10px;
+        
+    }
+   
+    footer h3{
+        font-size: 1em;
+        display: inline-block;
+                
+    }
+    footer p{
+        font-size: .75em;
+        line-height: 5px;
+    }
+}

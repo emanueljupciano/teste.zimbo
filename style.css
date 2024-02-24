@@ -1,0 +1,238 @@
+@charset "UTF-8"
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+   
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: rgb(226, 151, 0);
+    background-size: 40px;
+    height: 40px;
+    color: rgb(243, 243, 243);
+    margin-top: -20px;
+    
+    
+}
+header h1{
+    text-decoration-color: blue;
+    text-align: left;
+    margin-bottom: -26px;
+    margin-left: 100px;
+}
+header h1::before{
+    content: url("imag/logo2.png");
+    padding-right: 5px;
+    padding-top: 4px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+
+}
+#imenu{
+    width: 20px;
+    margin-left: 10px;
+    
+}
+
+
+#lista ul{
+    background-color: rgba(199, 199, 199, 0.959);
+    width: 60vw;
+    height: 100vh;
+    color: black;
+    display: block; 
+    text-align: left;
+    display: none;
+    position: sticky;
+    
+    border: 1px solid rgba(5, 5, 5, 0.507);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-72%, -53%) ;
+
+}
+#lista ul li{
+    display: block;
+    line-height: 45px;
+    padding: 5px;
+    padding-left: 30px;
+
+}
+#lista ul li::before{
+    content: url("imag/galeriaft.png");
+}
+#lista ul li:hover{
+    background-color: rgb(109, 109, 109);
+    color: white;
+}
+#lista ul .md::before{
+    content: url("imag/mundo2.png");
+}
+#lista ul .tv::before{
+    content: url("imag/tv2.png");
+}
+#lista ul .eco::before{
+    content: url("imag/economia2.png");
+}
+#lista ul .desp::before{
+    content: url("imag/desporto2.png");
+    
+}
+#lista ul .socied::before{
+    content: url("imag/socied.png");
+}
+#direct{
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;    
+    text-align: left;
+    font-size: .77em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(220%, -930%) ;
+}
+#direct:hover{
+    background-color: rgb(100, 100, 100);
+}
+.navegador{
+    height: 55px;
+    background-color: rgb(25, 25, 78);
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+}
+.rolagem{
+    min-width: 90px;
+    max-height: 22px;
+    background-color:  rgb(67, 66, 92);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    
+}
+.navegador .rolagem:hover{
+    background-color: rgba(255, 254, 254, 0.781);    
+}
+.rolagem p{
+    color: white;
+    text-align: center;
+    margin-top: 3px;
+    font-size: .8em;
+}
+main{
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+main .parag{
+    text-indent: 40px;
+    line-height: 23px;
+    margin: auto;
+}
+main a{
+    color: black;
+    text-decoration: none;
+}
+
+#imagem{
+    background: rgb(78, 77, 136);
+    height: 210px;
+}
+section{
+    min-height: 280px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.822);
+    margin-bottom: 15px;
+    
+}
+article, video{
+    margin: auto;
+    height: 220px;
+    width: 380px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+section p {
+    font-size: .8em;
+}
+section h3{
+    text-align: left;
+    margin: 0px;
+    font-size: 1.1em;
+}
+.mais{
+    width: 150px;
+    background-color: rgb(226, 151, 0);
+    color: rgb(240, 240, 240);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(116, 116, 116, 0.719);
+    cursor: pointer;
+    
+}
+.mais:hover{
+    background-color: rgb(236, 236, 236);
+    color: black;
+}
+.recomendar li{
+    font-size: .95em;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.651) ;
+    padding: 8px;
+    display: block;
+    margin-left: -30px;
+}
+.recomendar li:hover {
+    background-color: rgba(148, 148, 148, 0.411);
+    font-weight: 530;
+    animation-duration: .2s;
+}
+
+/*.recomendar li::after{
+    content: url("ceta.png");
+    margin-right: -500px;
+}*/
+
+footer{
+    background-color: rgb(31, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+h2{
+    margin-bottom: -10px;
+}
+footer h3{
+    font-size: .9em;
+}
+footer p{
+    font-size: .75em;
+    line-height: 5px;
+}
+.ft{
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 10px;   
+    width: 250px;
+    font-size: .7em;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
